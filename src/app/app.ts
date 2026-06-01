@@ -1,12 +1,18 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { SumarNumerosComponent } from './sumar-numeros/sumar-numeros';
+import { CalcularFactorialComponent } from './calcular-factorial/calcular-factorial';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [SumarNumerosComponent, CalcularFactorialComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('angular-proyectos');
+  title = 'angular-proyectos';
+  proyectoActivo: string = 'inicio';
+  cambiarProyecto(proyecto: string) {
+    this.proyectoActivo = proyecto;
+  }
 }
