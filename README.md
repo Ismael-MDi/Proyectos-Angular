@@ -1,7 +1,7 @@
 # Proyectos en Angular: Suma y Factorial
 
 **Autor:** Ismael Morales Diaz
-**Ubicación:** Los proyectos principales se encuentran dentro de la carpeta `src`.
+**Ubicación:** Los proyectos principales se encuentran dentro de la carpeta `src/app/`.
 
 ## Requisitos Previos
 * **Node.js** (Versión 24.16.0 o superior).
